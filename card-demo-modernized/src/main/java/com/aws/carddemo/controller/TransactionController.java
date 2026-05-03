@@ -1,32 +1,36 @@
 package com.aws.carddemo.controller;
 
-import com.aws.carddemo.model.dto.TransactionDTO;
+import com.aws.carddemo.model.entity.Transaction;
 import com.aws.carddemo.service.TransactionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/transactions")
+@RequestMapping("/api/v1/transaction")
 @RequiredArgsConstructor
 public class TransactionController {
-
-    private final TransactionService transactionService;
+    private final TransactionService service;
 
     @PostMapping
-    public ResponseEntity<TransactionDTO> createTransaction(@RequestBody TransactionDTO transactionDTO) {
-        return ResponseEntity.ok(transactionService.processTransaction(transactionDTO));
+    public ResponseEntity<Transaction> create(@RequestBody Transaction entity) {
+        return ResponseEntity.ok(service.save(entity));
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Transaction>> getAll() {
+        return ResponseEntity.ok(service.findAll());
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<TransactionDTO> getTransactionById(@PathVariable String id) {
-        return ResponseEntity.ok(transactionService.getTransactionById(id));
+    public ResponseEntity<Transaction> getById(@PathVariable Object id) {
+        return ResponseEntity.ok(service.findById(id));
     }
 
-    @GetMapping("/account/{accountId}")
-    public ResponseEntity<List<TransactionDTO>> getTransactionsByAccountId(@PathVariable Long accountId) {
-        return ResponseEntity.ok(transactionService.getTransactionsByAccountId(accountId));
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Object id) {
+        service.deleteById(id);
+        return ResponseEntity.noContent().build();
     }
 }
