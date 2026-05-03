@@ -8,4 +8,7 @@ public interface AccountService {
     Account findById(Object id);
     List<Account> findAll();
     void deleteById(Object id);
+    
+    // High-fidelity update method migrated from COBOL
+    Account updateAccount(Long accountId, com.aws.carddemo.model.dto.AccountUpdateDTO updateDto);
 }
