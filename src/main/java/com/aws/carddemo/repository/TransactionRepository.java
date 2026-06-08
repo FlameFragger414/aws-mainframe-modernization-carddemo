@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface TransactionRepository extends JpaRepository<Transaction, Object> {
+    java.util.List<Transaction> findByAccount_AcctId(Long acctId);
 }

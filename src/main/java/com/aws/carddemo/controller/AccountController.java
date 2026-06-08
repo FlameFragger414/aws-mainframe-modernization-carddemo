@@ -1,10 +1,12 @@
 package com.aws.carddemo.controller;
 
+import com.aws.carddemo.model.dto.AccountUpdateDTO;
 import com.aws.carddemo.model.entity.Account;
 import com.aws.carddemo.service.AccountService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 @RestController
@@ -24,12 +26,17 @@ public class AccountController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Account> getById(@PathVariable Object id) {
+    public ResponseEntity<Account> getById(@PathVariable Long id) {
         return ResponseEntity.ok(service.findById(id));
     }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<Account> update(@PathVariable Long id, @RequestBody AccountUpdateDTO updateDto) {
+        return ResponseEntity.ok(service.updateAccount(id, updateDto));
+    }
+
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> delete(@PathVariable Object id) {
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
         service.deleteById(id);
         return ResponseEntity.noContent().build();
     }

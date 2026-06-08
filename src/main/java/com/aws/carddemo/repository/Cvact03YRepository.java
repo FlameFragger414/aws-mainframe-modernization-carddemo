@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface Cvact03YRepository extends JpaRepository<Cvact03Y, Object> {
+    java.util.Optional<Cvact03Y> findByXrefAcctId(Long xrefAcctId);
 }
