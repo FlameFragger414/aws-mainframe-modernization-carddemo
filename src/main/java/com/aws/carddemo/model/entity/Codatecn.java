@@ -37,9 +37,6 @@ public class Codatecn {
     @Column(name = "codatecn_1i_s1")
     private String codatecn1IS1;
 
-    @Column(name = "codatecn_1mm")
-    private String codatecn1Mm;
-
     @Column(name = "codatecn_1i_s2")
     private String codatecn1IS2;
 
@@ -54,9 +51,6 @@ public class Codatecn {
 
     @Column(name = "codatecn_0ut_date")
     private String codatecn0UtDate;
-
-    @Column(name = "codatecn_1o_yyyy")
-    private String codatecn1OYyyy;
 
     @Column(name = "codatecn_1o_s1")
     private String codatecn1OS1;

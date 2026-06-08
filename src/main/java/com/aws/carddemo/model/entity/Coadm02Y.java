@@ -16,9 +16,6 @@ public class Coadm02Y {
     @Column(name = "cdemo_admin_opt_count")
     private Integer cdemoAdminOptCount;
 
-    @Column(name = "cdemo_admin_opt_count")
-    private Integer cdemoAdminOptCount;
-
     @Column(name = "cdemo_admin_opt_num")
     private Integer cdemoAdminOptNum;
 
