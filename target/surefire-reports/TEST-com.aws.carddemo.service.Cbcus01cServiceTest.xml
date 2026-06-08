@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.018" tests="199" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/workspace/target/test-classes:/workspace/target/classes:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.5/spring-boot-starter-data-jpa-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.5/spring-boot-starter-aop-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/spring-aop/6.1.6/spring-aop-6.1.6.jar:/home/ubuntu/.m2/repository/org/aspectj/aspectjweaver/1.9.22/aspectjweaver-1.9.22.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.5/spring-boot-starter-jdbc-3.2.5.jar:/home/ubuntu/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/ubuntu/.m2/repository/org/springframework/spring-jdbc/6.1.6/spring-jdbc-6.1.6.jar:/home/ubuntu/.m2/repository/org/hibernate/orm/hibernate-core/6.4.4.Final/hibernate-core-6.4.4.Final.jar:/home/ubuntu/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/ubuntu/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/ubuntu/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/ubuntu/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/ubuntu/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/home/ubuntu/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy/1.14.13/byte-buddy-1.14.13.jar:/home/ubuntu/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/home/ubuntu/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/home/ubuntu/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/home/ubuntu/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/home/ubuntu/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/ubuntu/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/ubuntu/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-jpa/3.2.5/spring-data-jpa-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-commons/3.2.5/spring-data-commons-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/spring-orm/6.1.6/spring-orm-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/spring-context/6.1.6/spring-context-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/spring-tx/6.1.6/spring-tx-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/spring-beans/6.1.6/spring-beans-6.1.6.jar:/home/ubuntu/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/home/ubuntu/.m2/repository/org/springframework/spring-aspects/6.1.6/spring-aspects-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.5/spring-boot-starter-web-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.5/spring-boot-starter-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot/3.2.5/spring-boot-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.5/spring-boot-autoconfigure-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.5/spring-boot-starter-logging-3.2.5.jar:/home/ubuntu/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/home/ubuntu/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/home/ubuntu/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/home/ubuntu/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/ubuntu/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/home/ubuntu/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.5/spring-boot-starter-json-3.2.5.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.4/jackson-databind-2.15.4.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.4/jackson-annotations-2.15.4.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.4/jackson-core-2.15.4.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.4/jackson-datatype-jdk8-2.15.4.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.4/jackson-datatype-jsr310-2.15.4.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.4/jackson-module-parameter-names-2.15.4.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.5/spring-boot-starter-tomcat-3.2.5.jar:/home/ubuntu/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.20/tomcat-embed-core-10.1.20.jar:/home/ubuntu/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.20/tomcat-embed-websocket-10.1.20.jar:/home/ubuntu/.m2/repository/org/springframework/spring-web/6.1.6/spring-web-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/spring-webmvc/6.1.6/spring-webmvc-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/spring-expression/6.1.6/spring-expression-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.5/spring-boot-starter-validation-3.2.5.jar:/home/ubuntu/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.20/tomcat-embed-el-10.1.20.jar:/home/ubuntu/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/home/ubuntu/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/3.2.5/spring-boot-starter-actuator-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/3.2.5/spring-boot-actuator-autoconfigure-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-actuator/3.2.5/spring-boot-actuator-3.2.5.jar:/home/ubuntu/.m2/repository/io/micrometer/micrometer-observation/1.12.5/micrometer-observation-1.12.5.jar:/home/ubuntu/.m2/repository/io/micrometer/micrometer-commons/1.12.5/micrometer-commons-1.12.5.jar:/home/ubuntu/.m2/repository/io/micrometer/micrometer-jakarta9/1.12.5/micrometer-jakarta9-1.12.5.jar:/home/ubuntu/.m2/repository/io/micrometer/micrometer-core/1.12.5/micrometer-core-1.12.5.jar:/home/ubuntu/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/home/ubuntu/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/home/ubuntu/.m2/repository/com/mysql/mysql-connector-j/8.3.0/mysql-connector-j-8.3.0.jar:/home/ubuntu/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.5/spring-boot-starter-test-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-test/3.2.5/spring-boot-test-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.5/spring-boot-test-autoconfigure-3.2.5.jar:/home/ubuntu/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/ubuntu/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/ubuntu/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/ubuntu/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/home/ubuntu/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/home/ubuntu/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/home/ubuntu/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/ubuntu/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/home/ubuntu/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/ubuntu/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ubuntu/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/ubuntu/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/ubuntu/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.13/byte-buddy-agent-1.14.13.jar:/home/ubuntu/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/home/ubuntu/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/ubuntu/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/ubuntu/.m2/repository/org/springframework/spring-core/6.1.6/spring-core-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/spring-jcl/6.1.6/spring-jcl-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/spring-test/6.1.6/spring-test-6.1.6.jar:/home/ubuntu/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/ubuntu/.m2/repository/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar:/home/ubuntu/.m2/repository/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/workspace/target/surefire/surefirebooter-20260608100204530_3.jar /workspace/target/surefire 2026-06-08T10-02-04_490-jvmRun1 surefire-20260608100204530_1tmp surefire_0-20260608100204530_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/workspace/target/test-classes:/workspace/target/classes:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.5/spring-boot-starter-data-jpa-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.5/spring-boot-starter-aop-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/spring-aop/6.1.6/spring-aop-6.1.6.jar:/home/ubuntu/.m2/repository/org/aspectj/aspectjweaver/1.9.22/aspectjweaver-1.9.22.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.5/spring-boot-starter-jdbc-3.2.5.jar:/home/ubuntu/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/ubuntu/.m2/repository/org/springframework/spring-jdbc/6.1.6/spring-jdbc-6.1.6.jar:/home/ubuntu/.m2/repository/org/hibernate/orm/hibernate-core/6.4.4.Final/hibernate-core-6.4.4.Final.jar:/home/ubuntu/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/ubuntu/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/ubuntu/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/ubuntu/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/ubuntu/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/home/ubuntu/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy/1.14.13/byte-buddy-1.14.13.jar:/home/ubuntu/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/home/ubuntu/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/home/ubuntu/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/home/ubuntu/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/home/ubuntu/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/ubuntu/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/ubuntu/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-jpa/3.2.5/spring-data-jpa-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-commons/3.2.5/spring-data-commons-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/spring-orm/6.1.6/spring-orm-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/spring-context/6.1.6/spring-context-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/spring-tx/6.1.6/spring-tx-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/spring-beans/6.1.6/spring-beans-6.1.6.jar:/home/ubuntu/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/home/ubuntu/.m2/repository/org/springframework/spring-aspects/6.1.6/spring-aspects-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.5/spring-boot-starter-web-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.5/spring-boot-starter-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot/3.2.5/spring-boot-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.5/spring-boot-autoconfigure-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.5/spring-boot-starter-logging-3.2.5.jar:/home/ubuntu/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/home/ubuntu/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/home/ubuntu/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/home/ubuntu/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/ubuntu/.m2/repository/org/slf4j/jul-to-slf4j/2.0.13/jul-to-slf4j-2.0.13.jar:/home/ubuntu/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.5/spring-boot-starter-json-3.2.5.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.4/jackson-databind-2.15.4.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.4/jackson-annotations-2.15.4.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.4/jackson-core-2.15.4.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.4/jackson-datatype-jdk8-2.15.4.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.4/jackson-datatype-jsr310-2.15.4.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.4/jackson-module-parameter-names-2.15.4.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.5/spring-boot-starter-tomcat-3.2.5.jar:/home/ubuntu/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.20/tomcat-embed-core-10.1.20.jar:/home/ubuntu/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.20/tomcat-embed-websocket-10.1.20.jar:/home/ubuntu/.m2/repository/org/springframework/spring-web/6.1.6/spring-web-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/spring-webmvc/6.1.6/spring-webmvc-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/spring-expression/6.1.6/spring-expression-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.5/spring-boot-starter-validation-3.2.5.jar:/home/ubuntu/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.20/tomcat-embed-el-10.1.20.jar:/home/ubuntu/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/home/ubuntu/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/3.2.5/spring-boot-starter-actuator-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/3.2.5/spring-boot-actuator-autoconfigure-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-actuator/3.2.5/spring-boot-actuator-3.2.5.jar:/home/ubuntu/.m2/repository/io/micrometer/micrometer-observation/1.12.5/micrometer-observation-1.12.5.jar:/home/ubuntu/.m2/repository/io/micrometer/micrometer-commons/1.12.5/micrometer-commons-1.12.5.jar:/home/ubuntu/.m2/repository/io/micrometer/micrometer-jakarta9/1.12.5/micrometer-jakarta9-1.12.5.jar:/home/ubuntu/.m2/repository/io/micrometer/micrometer-core/1.12.5/micrometer-core-1.12.5.jar:/home/ubuntu/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/home/ubuntu/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/home/ubuntu/.m2/repository/com/mysql/mysql-connector-j/8.3.0/mysql-connector-j-8.3.0.jar:/home/ubuntu/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.5/spring-boot-starter-test-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-test/3.2.5/spring-boot-test-3.2.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.5/spring-boot-test-autoconfigure-3.2.5.jar:/home/ubuntu/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/ubuntu/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/home/ubuntu/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/home/ubuntu/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/home/ubuntu/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/home/ubuntu/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/home/ubuntu/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/ubuntu/.m2/repository/org/awaitility/awaitility/4.2.1/awaitility-4.2.1.jar:/home/ubuntu/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/ubuntu/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ubuntu/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/ubuntu/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/ubuntu/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.13/byte-buddy-agent-1.14.13.jar:/home/ubuntu/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/home/ubuntu/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/ubuntu/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/ubuntu/.m2/repository/org/springframework/spring-core/6.1.6/spring-core-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/spring-jcl/6.1.6/spring-jcl-6.1.6.jar:/home/ubuntu/.m2/repository/org/springframework/spring-test/6.1.6/spring-test-6.1.6.jar:/home/ubuntu/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/ubuntu/.m2/repository/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar:/home/ubuntu/.m2/repository/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/ubuntu"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/workspace"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/workspace/target/surefire/surefirebooter-20260608100204530_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.10+7-Ubuntu-124.04"/>
+    <property name="user.name" value="ubuntu"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.1.147"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/ubuntu/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.10"/>
+    <property name="user.dir" value="/workspace"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="21.0.10+7-Ubuntu-124.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testScenario_100" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_101" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_102" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_103" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_104" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_105" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.001"/>
+  <testcase name="testScenario_106" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_107" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_108" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_109" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_110" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_111" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_112" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_113" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_114" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_115" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_116" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_117" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_118" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_119" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_120" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_121" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_122" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_123" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.001"/>
+  <testcase name="testScenario_124" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_125" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_126" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_127" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_128" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_129" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_130" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_131" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_132" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_133" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_134" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_135" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_136" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_137" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_138" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_139" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_140" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_141" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_142" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_143" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_144" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_145" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_146" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_147" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_148" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_149" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_150" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_151" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_152" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_153" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_154" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_155" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_156" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.001"/>
+  <testcase name="testScenario_157" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_158" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_159" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_160" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_161" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_162" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_163" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_164" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_165" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_166" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_167" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_168" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.001"/>
+  <testcase name="testScenario_169" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_170" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_171" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_172" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_173" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_174" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_175" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_176" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_177" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_178" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_179" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.001"/>
+  <testcase name="testScenario_180" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_181" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_182" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_183" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_184" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_185" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_186" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_187" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_188" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_189" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_190" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_191" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_192" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_193" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_194" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_195" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_196" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_197" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_198" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_199" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_10" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_11" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.001"/>
+  <testcase name="testScenario_12" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_13" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_14" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_15" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_16" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_17" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_18" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_19" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_20" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_21" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_22" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_23" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.001"/>
+  <testcase name="testScenario_24" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_25" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_26" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_27" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_28" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_29" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_30" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_31" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_32" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_33" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_34" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_35" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.001"/>
+  <testcase name="testScenario_36" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_37" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_38" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_39" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_40" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_41" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_42" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_43" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.001"/>
+  <testcase name="testScenario_44" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_45" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_46" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_47" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_48" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_49" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_50" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_51" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_52" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_53" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_54" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.001"/>
+  <testcase name="testScenario_55" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_56" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_57" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_58" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_59" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_60" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_61" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_62" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_63" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_64" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_65" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_66" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.001"/>
+  <testcase name="testScenario_67" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_68" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_69" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_70" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_71" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_72" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_73" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_74" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_75" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_76" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_77" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_78" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.001"/>
+  <testcase name="testScenario_79" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_80" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_81" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_82" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_83" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_84" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_85" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_86" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_87" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_88" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_89" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_90" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_91" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_92" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_93" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_94" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_95" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_96" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_97" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_98" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_99" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_1" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_2" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.001"/>
+  <testcase name="testScenario_3" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_4" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_5" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_6" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_7" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_8" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+  <testcase name="testScenario_9" classname="com.aws.carddemo.service.Cbcus01cServiceTest" time="0.0"/>
+</testsuite>
